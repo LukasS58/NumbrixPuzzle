@@ -1,9 +1,8 @@
 # NumbrixPuzzle
-Programmierkurs SoSe 24__
+Programmierkurs SoSe 24
 
-Lukas Sieber__
-Version 1.1__
-15.05.2024__
+Version 1.1<br/>
+15.05.2024<br/>
 
 -----------------------------------------------------------------------------------------------------------
 Anleitung zum Spielen:
