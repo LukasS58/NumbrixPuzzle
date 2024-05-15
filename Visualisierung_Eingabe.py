@@ -77,7 +77,7 @@ def checkInput(string:str, n:int, m:int) -> None:
     if not checkStringFormal(string):
         raise Eingabefehler("Richtiges Eingabeformat ist: int, int")
 
-    L = input.split(",")
+    L = string.split(",")
 
     # prueft ob die uebergebenen Indices eintragbar sind
     if not ( int(L[0]) >= 0 and int(L[0]) < n):
