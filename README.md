@@ -1,9 +1,6 @@
 # NumbrixPuzzle
 Programmierkurs SoSe 24
 
-Programmierkurs SoSe 2024
-Numbrix Puzzle
-
 Lukas Sieber
 Version 1.1
 15.05.2024
@@ -13,8 +10,8 @@ Anleitung zum Spielen:
 
 1. Schritt: Erstellen der Textdatei mit Spielfeld die Datei muss folgende Form haben:
 
-\# Zeilen: 4
-\# Spalten:4
+\# Zeilen: 4\\
+\# Spalten: 4\\
  0 & 1 & 0 & 0
  0 & 2 & 3 & 0
  0 & 7 & 4 & 0 
