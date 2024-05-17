@@ -88,4 +88,44 @@ def checkInput(string:str, n:int, m:int) -> None:
     return None
 
 
+# Prototyp neue Ausgabe auf der Konsole:
+# TODO: Striche zwischen Zeilen Elementen noch grün und Größe dynamisch anpassen
+# TODO: Nullen nicht abdrucken
+# TODO: Nachbarn einfuegen
+# 10x10 Matrix testen
+
+def print_matrix(matrix):
+    if not matrix or not matrix[0]:
+        return
+    
+    # Setze eine feste Breite für die Felder (du kannst die Breite anpassen)
+    field_width = 10
+
+    # ANSI-Escape-Sequenzen für grüne Farbe
+    GREEN = '\033[92m'
+    RESET = '\033[0m'
+    
+    # Drucke die obere Linie
+    def print_horizontal_line():
+        print(GREEN + '+' + '+'.join('-' * (field_width + 2) for _ in range(len(matrix[0]))) + '+' + RESET)
+    
+    # Drucke die Matrixzeile
+    def print_row(row):
+        print('| ' + ' | '.join(f"{str(matrix[row][col]).center(field_width)}" for col in range(len(matrix[0]))) + ' |')
+    
+    # Drucken der gesamten Matrix
+    print_horizontal_line()
+    for row in range(len(matrix)):
+        print_row(row)
+        print_horizontal_line()
+
+# Beispielmatrix
+matrix = [
+    [1, 22, 333],
+    [4444, 55, 6],
+    [7, 888, 9999]
+]
+
+print_matrix(matrix)
+
         
